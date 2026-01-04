@@ -36,7 +36,7 @@ function Layout({ children }) {
             <img src="/image/Torino (4) 1.png" />
             <Link href="/">صفحه اصلی</Link>
             <Link href="/">خدمات گردشگری</Link>
-            <Link href="/">درباره ما</Link>
+            <Link href="/about">درباره ما</Link>
             <Link href="/">تماس با ما</Link>
           </div>
 
@@ -109,7 +109,7 @@ function Layout({ children }) {
         <Link href="/" onClick={menuHandler}>
           <MdOutlineAirplaneTicket /> خدمات گردشگری
         </Link>
-        <Link href="/" onClick={menuHandler}>
+        <Link href="/about" onClick={menuHandler}>
           <PiUserSoundDuotone /> درباره ما
         </Link>
         <Link href="/" onClick={menuHandler}>
@@ -138,7 +138,7 @@ function Layout({ children }) {
           <div className={styles.footer_links}>
             <div className={styles.torino_info}>
               <h1>تورینو</h1>
-              <Link href="/">درباره ما</Link>
+              <Link href="/about">درباره ما</Link>
               <Link href="/">تماس با ما</Link>
               <Link href="/">چرا تورینو</Link>
               <Link href="/">بیمه مسافرتی</Link>
