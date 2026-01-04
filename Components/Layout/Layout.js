@@ -146,7 +146,7 @@ function Layout({ children }) {
             <div className={styles.torino_info}>
               <h1>خدمات مشتریان</h1>
               <Link href="/">پشتیبانی آنلاین</Link>
-              <Link href="/">راهنمای خرید</Link>
+              <Link href="/Guide/purchase">راهنمای خرید</Link>
               <Link href="/">راهنمای استرداد</Link>
               <Link href="/faq">پرسش و پاسخ</Link>
             </div>
