@@ -1,4 +1,4 @@
-import AboutUs from "@/Components/Template/Home/AboutUs";
+import AboutUs from "@/Components/Template/Links/AboutUs";
 
 function about() {
   return (

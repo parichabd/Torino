@@ -3,12 +3,14 @@ import styles from "./AboutUs.module.css";
 function AboutUs() {
   return (
     <div className={styles.container}>
-      <div className={styles.head_about}>
+      {/* Header */}
+      <div className={styles.head}>
         <h1>درباره تورینو</h1>
-        <p>تجربه سفری لذت بخش</p>
+        <p>تجربه سفری لذت‌بخش</p>
       </div>
 
-      <div>
+      {/* Content */}
+      <div className={styles.content}>
         <h2>آژانس مسافرتی تورینو</h2>
         <p>
           عازم کجا هستید؟ هیچ فرقی نمی‌کند. این حق شماست که سفری باکیفیت، آسان و
@@ -35,21 +37,26 @@ function AboutUs() {
           امکان خرید سایر محصولات گردشگری نیز به گردشگری اضافه شد.
         </p>
       </div>
-      <div>
-              <div>
-                  <img src="/SVG/support.png"/>
+
+      {/* Features */}
+      <div className={styles.features}>
+        <div className={styles.card}>
+          <img src="/SVG/support.png" />
           <p>پشتیبانی ۲۴ ساعته</p>
         </div>
-              <div>
-                                    <img src="/SVG/airplane.png"/>
-          <p>ساختن تور‌های متنوع توسط کاربران</p>
+
+        <div className={styles.card}>
+          <img src="/SVG/airplane.png" />
+          <p>ساخت تورهای متنوع</p>
         </div>
-              <div>
-                                    <img src="/SVG/quality-assurance.png"/>
+
+        <div className={styles.card}>
+          <img src="/SVG/quality-assurance.png" />
           <p>تضمین بهترین کیفیت</p>
         </div>
-              <div>
-                                    <img src="/SVG/global-shipping.png"/>
+
+        <div className={styles.card}>
+          <img src="/SVG/global-shipping.png" />
           <p>اجرای تورهای متنوع</p>
         </div>
       </div>

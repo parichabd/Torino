@@ -37,7 +37,7 @@ function Layout({ children }) {
             <Link href="/">صفحه اصلی</Link>
             <Link href="/">خدمات گردشگری</Link>
             <Link href="/about">درباره ما</Link>
-            <Link href="/">تماس با ما</Link>
+            <Link href="/contact">تماس با ما</Link>
           </div>
 
           <div className={styles.mobile_menu}>
@@ -112,7 +112,7 @@ function Layout({ children }) {
         <Link href="/about" onClick={menuHandler}>
           <PiUserSoundDuotone /> درباره ما
         </Link>
-        <Link href="/" onClick={menuHandler}>
+        <Link href="/contact" onClick={menuHandler}>
           <MdOutlinePermPhoneMsg /> تماس با ما
         </Link>
       </nav>
@@ -139,7 +139,7 @@ function Layout({ children }) {
             <div className={styles.torino_info}>
               <h1>تورینو</h1>
               <Link href="/about">درباره ما</Link>
-              <Link href="/">تماس با ما</Link>
+              <Link href="/contact">تماس با ما</Link>
               <Link href="/">چرا تورینو</Link>
               <Link href="/">بیمه مسافرتی</Link>
             </div>

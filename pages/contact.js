@@ -1,4 +1,4 @@
-import ContactUs from "@/Components/Template/Home/ContactUs";
+import ContactUs from "@/Components/Template/Links/ContactUs";
 
 function contact() {
   return (
