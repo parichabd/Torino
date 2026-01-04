@@ -148,7 +148,7 @@ function Layout({ children }) {
               <Link href="/">پشتیبانی آنلاین</Link>
               <Link href="/">راهنمای خرید</Link>
               <Link href="/">راهنمای استرداد</Link>
-              <Link href="/">پرسش و پاسخ</Link>
+              <Link href="/faq">پرسش و پاسخ</Link>
             </div>
           </div>
 
