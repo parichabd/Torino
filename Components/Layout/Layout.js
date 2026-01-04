@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import AuthToast from "@/Components/Auth/AuthToast";
 
-import styles from "./layout.module.css";
+import styles from "./Layout.module.css";
 
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineAirplaneTicket } from "react-icons/md";

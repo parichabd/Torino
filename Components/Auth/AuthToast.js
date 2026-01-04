@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useSendOtp } from "@/hooks/useSendOtp";
+import { useSendOtp } from "@/Hooks/useSendOtp";
+
 import styles from "./AuthToast.module.css";
+
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 export default function AuthToast({ onClose, mode = "login" }) {
@@ -152,9 +154,7 @@ export default function AuthToast({ onClose, mode = "login" }) {
                     })}
                   />
 
-                  <span className={styles.error}>
-                    {errors.mobile?.message}
-                  </span>
+                  <span className={styles.error}>{errors.mobile?.message}</span>
                 </div>
 
                 <p className={styles.loginPage}>
@@ -167,9 +167,7 @@ export default function AuthToast({ onClose, mode = "login" }) {
                   </button>
                 </p>
 
-                <button className={styles.submit}>
-                  ارسال کد تایید
-                </button>
+                <button className={styles.submit}>ارسال کد تایید</button>
               </form>
             ) : (
               <form
@@ -182,9 +180,7 @@ export default function AuthToast({ onClose, mode = "login" }) {
                     required: "نام الزامی است",
                   })}
                 />
-                <span className={styles.error}>
-                  {errors.name?.message}
-                </span>
+                <span className={styles.error}>{errors.name?.message}</span>
 
                 <input
                   placeholder="شماره موبایل"
@@ -192,13 +188,9 @@ export default function AuthToast({ onClose, mode = "login" }) {
                     required: "شماره موبایل الزامی است",
                   })}
                 />
-                <span className={styles.error}>
-                  {errors.mobile?.message}
-                </span>
+                <span className={styles.error}>{errors.mobile?.message}</span>
 
-                <button className={styles.submit}>
-                  ثبت‌نام و ارسال کد
-                </button>
+                <button className={styles.submit}>ثبت‌نام و ارسال کد</button>
               </form>
             )}
           </>
@@ -214,9 +206,9 @@ export default function AuthToast({ onClose, mode = "login" }) {
             </p>
 
             <div
-              className={`${styles.otp} ${
-                otpError ? styles.otpError : ""
-              } ${shake ? styles.shake : ""}`}
+              className={`${styles.otp} ${otpError ? styles.otpError : ""} ${
+                shake ? styles.shake : ""
+              }`}
               dir="ltr"
             >
               {otp.map((value, index) => (
@@ -225,12 +217,8 @@ export default function AuthToast({ onClose, mode = "login" }) {
                   ref={(el) => (otpRefs.current[index] = el)}
                   value={value}
                   maxLength={1}
-                  onChange={(e) =>
-                    handleOtpChange(index, e.target.value)
-                  }
-                  onKeyDown={(e) =>
-                    handleOtpKeyDown(index, e)
-                  }
+                  onChange={(e) => handleOtpChange(index, e.target.value)}
+                  onKeyDown={(e) => handleOtpKeyDown(index, e)}
                 />
               ))}
             </div>
@@ -242,10 +230,7 @@ export default function AuthToast({ onClose, mode = "login" }) {
                 {formatTime(timeLeft)} تا ارسال مجدد کد
               </p>
             ) : (
-              <button
-                className={styles.resend}
-                onClick={resendHandler}
-              >
+              <button className={styles.resend} onClick={resendHandler}>
                 ارسال مجدد کد
               </button>
             )}
@@ -258,4 +243,4 @@ export default function AuthToast({ onClose, mode = "login" }) {
       </div>
     </div>
   );
-} 
+}
