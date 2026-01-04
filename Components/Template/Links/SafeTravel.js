@@ -1,10 +1,9 @@
-import Link from "next/link";
-import React from "react";
+import styles from "./SafeTravel.module.css";
 
 function SafeTravel() {
   return (
-    <div>
-      <div>
+    <section className={styles.container}>
+      <div className={styles.header}>
         <h1>بیمه مسافرتی چیست؟</h1>
         <p>
           حادثه خبر نمی‌کند! هر جا این جمله معروف را بشنویم یاد بیمه می‌افتیم.
@@ -20,7 +19,8 @@ function SafeTravel() {
           حد زیادی جبران کند.
         </p>
       </div>
-      <div>
+
+      <div className={styles.header}>
         <h1>خرید بیمه مسافرتی</h1>
         <p>
           خرید بیمه مسافرتی برای بسیاری از سفرها اجباری نیست و این حق انتخاب
@@ -29,55 +29,59 @@ function SafeTravel() {
           مسافرتی برای بسیاری از کشورهای خارجی (گرفتن ویزا، مخصوصا شینگن) ضروری
           است که حتما باید آن بیمه را از یک شرکت معتبر بیمه مسافرتی دریافت کرده
           باشید. برای خرید بیمه مسافرتی، لازم است که قبل از سفر به یک شرکت بیمه
-          که خدمات بیمه مسافرتی ارائه می‌کند مراجعه کنید یا با علی‌بابا ارتباط
-          بگیرید. اگر همسفر علی‌بابا باشید، خرید بیمه مسافرتی سامان از علی‌بابا،
+          که خدمات بیمه مسافرتی ارائه می‌کند مراجعه کنید یا با تورینو ارتباط
+          بگیرید. اگر همسفر تورینو باشید، خرید بیمه مسافرتی سامان از تورینو
           کار به‌صرفه‌تر و سریع‌تری است؛ چرا که بدون دردسر و با پشتیبانی 24
-          ساعته علی‌بابا در هفت روز هفته، می‌توانید به‌سرعت بیمه متناسب با
-          شرایطتان را پیدا و خریداری کنید. بیمه های مسافرتی خدمات متنوعی به
-          مسافران ارائه می‌کنند، برای مثال:
+          ساعته تورینو در هفت روز هفته، می‌توانید به‌سرعت بیمه متناسب با
+          شرایطتان را پیدا و خریداری کنید.
         </p>
-        <div>
-          <img src="/image/SVG/root-canal.png" />
+      </div>
+
+      <div className={styles.features}>
+        <div className={styles.card}>
+          <img src="/SVG/root-canal.png" alt="دندان‌پزشکی" />
           <p>دندان‌پزشکی</p>
         </div>
-        <div>
-          <img src="/image/SVG/documentation.png" />
+        <div className={styles.card}>
+          <img src="/SVG/documentation.png" alt="فوریت‌ پزشکی" />
           <p>فوریت‌ پزشکی</p>
         </div>
-        <div>
-          <img src="/image/SVG/security-official.png" />
+        <div className={styles.card}>
+          <img src="/SVG/security-official.png" alt="بیمه اموال" />
           <p>بیمه اموال</p>
         </div>
-        <div>
-          <img src="/image/SVG/suitcase.png" />
+        <div className={styles.card}>
+          <img src="/SVG/suitcase.png" alt="مفقودی چمدان" />
           <p>مفقودی چمدان</p>
         </div>
-        <div>
-          <img src="/image/SVG/equality.png" />
+        <div className={styles.card}>
+          <img src="/SVG/equality.png" alt="مشاور حقوقی" />
           <p>مشاور حقوقی</p>
         </div>
-        <div>
-          <img src="/image/SVG/airplane.png" />
+        <div className={styles.card}>
+          <img src="/SVG/airplane.png" alt="اورژانس هوایی" />
           <p>اورژانس هوایی</p>
         </div>
-        <div>
-          <img src="/image/SVG/chronometer.png" />
+        <div className={styles.card}>
+          <img src="/SVG/chronometer.png" alt="وقفه سفر" />
           <p>وقفه سفر</p>
         </div>
-        <div>
-          <img src="/image/SVG/tickets.png" />
+        <div className={styles.card}>
+          <img src="/SVG/tickets.png" alt="کنسلی سفر" />
           <p>کنسلی سفر</p>
         </div>
       </div>
 
-      <a
-        href="https://www.si24.ir/insurance/travel?utm_source=travel&utm_medium=button&utm_campaign=website"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img src="/image/main/images.png" />
-      </a>
-    </div>
+      <div className={styles.buy}>
+        <a
+          href="https://www.si24.ir/insurance/travel?utm_source=travel&utm_medium=button&utm_campaign=website"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="/image/main/images.png" alt="خرید بیمه مسافرتی" />
+        </a>
+      </div>
+    </section>
   );
 }
 
