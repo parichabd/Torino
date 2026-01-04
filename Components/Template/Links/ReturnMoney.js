@@ -1,9 +1,11 @@
+import styles from "./ReturnMoney.module.css";
+
 export default function RefundGuidePage() {
   return (
-    <main style={{ maxWidth: "800px", margin: "0 auto", padding: "40px 16px" }}>
-      <h1>راهنمای استرداد و کنسلی</h1>
+    <main className={styles.container}>
+      <h1 className={styles.title}>راهنمای استرداد و کنسلی</h1>
 
-      <section>
+      <section className={styles.section}>
         <h2>شرایط کنسلی</h2>
         <p>
           شرایط استرداد مبلغ تور بسته به زمان درخواست لغو به صورت زیر می‌باشد:
@@ -16,9 +18,9 @@ export default function RefundGuidePage() {
         </ul>
       </section>
 
-      <hr />
+      <hr className={styles.divider} />
 
-      <section>
+      <section className={styles.section}>
         <h2>زمان و نحوه بازگشت وجه</h2>
         <ul>
           <li>
@@ -36,9 +38,9 @@ export default function RefundGuidePage() {
         </ul>
       </section>
 
-      <hr />
+      <hr className={styles.divider} />
 
-      <section>
+      <section className={styles.section}>
         <h2>استثناها</h2>
         <p>در شرایط زیر قوانین استرداد ممکن است متفاوت باشد:</p>
 
