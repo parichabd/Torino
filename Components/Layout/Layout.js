@@ -141,7 +141,7 @@ function Layout({ children }) {
               <Link href="/Info/about">درباره ما</Link>
               <Link href="/Info/contact">تماس با ما</Link>
               <Link href="/Guide/whyUs">چرا تورینو</Link>
-              <Link href="/">بیمه مسافرتی</Link>
+              <Link href="/Info/insurance">بیمه مسافرتی</Link>
             </div>
             <div className={styles.torino_info}>
               <h1>خدمات مشتریان</h1>
