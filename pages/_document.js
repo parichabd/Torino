@@ -7,7 +7,6 @@ export default function Document() {
         <link rel="icon" href="/image/cover.svg" />
         <title>Torino</title>
       </Head>
-      <body></body>
       <body>
         <Main />
         <NextScript />
