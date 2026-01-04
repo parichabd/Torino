@@ -1,9 +1,11 @@
-import React from 'react'
+import AboutUs from "@/Components/Template/Home/AboutUs";
 
 function about() {
   return (
-    <div>about</div>
-  )
+    <div>
+      <AboutUs />
+    </div>
+  );
 }
 
-export default about
+export default about;
