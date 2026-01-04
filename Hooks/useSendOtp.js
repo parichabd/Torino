@@ -1,5 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { sendOtp } from "@/services/auth";
+import { sendOtp } from "@/Services/Auth";
 
 export function useSendOtp() {
   return useMutation({
