@@ -36,8 +36,8 @@ function Layout({ children }) {
             <img src="/image/Torino (4) 1.png" />
             <Link href="/">صفحه اصلی</Link>
             <Link href="/">خدمات گردشگری</Link>
-            <Link href="/about">درباره ما</Link>
-            <Link href="/contact">تماس با ما</Link>
+            <Link href="/Info/about">درباره ما</Link>
+            <Link href="/Info/contact">تماس با ما</Link>
           </div>
 
           <div className={styles.mobile_menu}>
@@ -109,10 +109,10 @@ function Layout({ children }) {
         <Link href="/" onClick={menuHandler}>
           <MdOutlineAirplaneTicket /> خدمات گردشگری
         </Link>
-        <Link href="/about" onClick={menuHandler}>
+        <Link href="/Info/about" onClick={menuHandler}>
           <PiUserSoundDuotone /> درباره ما
         </Link>
-        <Link href="/contact" onClick={menuHandler}>
+        <Link href="/Info/contact" onClick={menuHandler}>
           <MdOutlinePermPhoneMsg /> تماس با ما
         </Link>
       </nav>
@@ -138,8 +138,8 @@ function Layout({ children }) {
           <div className={styles.footer_links}>
             <div className={styles.torino_info}>
               <h1>تورینو</h1>
-              <Link href="/about">درباره ما</Link>
-              <Link href="/contact">تماس با ما</Link>
+              <Link href="/Info/about">درباره ما</Link>
+              <Link href="/Info/contact">تماس با ما</Link>
               <Link href="/Guide/whyUs">چرا تورینو</Link>
               <Link href="/">بیمه مسافرتی</Link>
             </div>
@@ -148,7 +148,7 @@ function Layout({ children }) {
               <Link href="/">پشتیبانی آنلاین</Link>
               <Link href="/Guide/purchase">راهنمای خرید</Link>
               <Link href="/Guide/refund">راهنمای استرداد</Link>
-              <Link href="/faq">پرسش و پاسخ</Link>
+              <Link href="/Info/faq">پرسش و پاسخ</Link>
             </div>
           </div>
 
