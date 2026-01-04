@@ -1,9 +1,11 @@
-import React from 'react'
+import MainPage from "@/Components/Template/Home/MainPage";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <MainPage />
+    </>
+  );
 }
 
-export default Home
+export default Home;
