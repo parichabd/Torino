@@ -140,7 +140,7 @@ function Layout({ children }) {
               <h1>تورینو</h1>
               <Link href="/about">درباره ما</Link>
               <Link href="/contact">تماس با ما</Link>
-              <Link href="/">چرا تورینو</Link>
+              <Link href="/Guide/whyUs">چرا تورینو</Link>
               <Link href="/">بیمه مسافرتی</Link>
             </div>
             <div className={styles.torino_info}>
