@@ -12,7 +12,7 @@ function PageNotFound() {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
 export default PageNotFound;

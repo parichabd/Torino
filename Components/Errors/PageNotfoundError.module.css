@@ -20,8 +20,12 @@
   font-style: bold;
 }
 
-
 .footer_button a{
+  text-decoration: none;
+  color: #28A745 ;
+}
+
+.footer_button {
     all: unset;
     width: 232px;
     height: 40px;
