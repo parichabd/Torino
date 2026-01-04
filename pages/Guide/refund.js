@@ -1,9 +1,10 @@
-import React from 'react'
-
+import ReturnMoney from "@/Components/Template/Links/ReturnMoney";
 function refund() {
   return (
-    <div>refund</div>
-  )
+    <>
+      <ReturnMoney />
+    </>
+  );
 }
 
-export default refund
+export default refund;
