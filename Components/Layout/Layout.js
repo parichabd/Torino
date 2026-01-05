@@ -57,10 +57,7 @@ function Layout({ children }) {
                 <img src="/icon/profile.png" />
 
                 {/* 👇 ورود */}
-                <button
-                  className={styles.mobile_buttom}
-                  onClick={openLogin}
-                >
+                <button className={styles.mobile_buttom} onClick={openLogin}>
                   <span>ورود</span>
                 </button>
 
@@ -68,10 +65,7 @@ function Layout({ children }) {
               </div>
 
               {/* 👇 ثبت نام */}
-              <button
-                className={styles.mobile_buttom}
-                onClick={openRegister}
-              >
+              <button className={styles.mobile_buttom} onClick={openRegister}>
                 <span className={styles.signup}>ثبت نام</span>
               </button>
             </div>
@@ -79,10 +73,7 @@ function Layout({ children }) {
 
           <div className={styles.mobile_menu}>
             {/* موبایل → پیش‌فرض ورود */}
-            <button
-              className={styles.mobile_buttom}
-              onClick={openLogin}
-            >
+            <button className={styles.mobile_buttom} onClick={openLogin}>
               <img src="/icon/sign in buttom.png" />
             </button>
           </div>
@@ -91,22 +82,15 @@ function Layout({ children }) {
 
       {/* Overlay منوی موبایل */}
       {isOpen && (
-        <div
-          className={styles.mobile_overlay}
-          onClick={menuHandler}
-        />
+        <div className={styles.mobile_overlay} onClick={menuHandler} />
       )}
 
       {/* Mobile Drawer */}
-      <nav
-        className={`${styles.mobile_drawer} ${
-          isOpen ? styles.open : ""
-        }`}
-      >
+      <nav className={`${styles.mobile_drawer} ${isOpen ? styles.open : ""}`}>
         <Link href="/" onClick={menuHandler}>
           <IoHomeOutline /> صفحه اصلی
         </Link>
-        <Link href="/" onClick={menuHandler}>
+        <Link href="/Guide/TourismServices" onClick={menuHandler}>
           <MdOutlineAirplaneTicket /> خدمات گردشگری
         </Link>
         <Link href="/Info/about" onClick={menuHandler}>
@@ -119,17 +103,12 @@ function Layout({ children }) {
 
       {/* 🔥 Auth Toast */}
       {isToastOpen && (
-        <AuthToast
-          mode={authMode}
-          onClose={() => setIsToastOpen(false)}
-        />
+        <AuthToast mode={authMode} onClose={() => setIsToastOpen(false)} />
       )}
 
       <div className={styles.dividerer_menu}></div>
 
-      <main className={`${styles.container} ${styles.main}`}>
-        {children}
-      </main>
+      <main className={`${styles.container} ${styles.main}`}>{children}</main>
 
       {/* Footer دست‌نخورده */}
       <footer className={`${styles.foot_layout} ${styles.container}`}>
