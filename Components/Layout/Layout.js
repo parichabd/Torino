@@ -35,7 +35,7 @@ function Layout({ children }) {
           <div className={styles.desktop_menu}>
             <img src="/image/Torino (4) 1.png" />
             <Link href="/">صفحه اصلی</Link>
-            <Link href="/">خدمات گردشگری</Link>
+            <Link href="/Guide/TourismServices">خدمات گردشگری</Link>
             <Link href="/Info/about">درباره ما</Link>
             <Link href="/Info/contact">تماس با ما</Link>
           </div>
