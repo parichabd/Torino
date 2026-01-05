@@ -89,3 +89,31 @@
   color: #555;
   font-size: 14px;
 }
+
+/* Service wrapper */
+.service {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Service image */
+.service img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service img {
+    width: 64px;
+    height: 64px;
+  }
+}
